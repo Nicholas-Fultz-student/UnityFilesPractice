@@ -52,10 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed68aee9af5d8b468bf863878060fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
-  acceleration: 10
+  maxSpeed: 15
+  acceleration: 5
   deceleration: 10
-  turnRate: 180
+  turnRate: 145
   onlyTurnWhileMoving: 1
 --- !u!65 &2140434851150422828
 BoxCollider:
@@ -425,8 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ddaf7545911ff4dbbddbfb43939e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.0144
-  frequency: 28.9
+  amplitude: 0.032
+  frequency: 27.3
 --- !u!114 &1864492435971004348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,15 +755,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: simulationSpeed
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: moveWithTransform
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -771,7 +775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 3
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8401522955562201423, guid: 87e7875b3e5053c49b20e106fb317d08, type: 3}
       propertyPath: InitialModule.startSize.minMaxState
